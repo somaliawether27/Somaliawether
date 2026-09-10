@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somalia Weather</title>
+  <meta name="theme-color" content="#1E88E5">
+  <link rel="manifest" href="/manifest-3.json">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌤️ Somalia Weather</h1>
+    <p>Cimilada magaalooyinka Soomaaliya</p>
+  </header>
+  <main>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Geli magaca magaalada..." />
+      <button id="searchBtn">Raadi</button>
+    </div>
+    <div id="weatherResult" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <div class="weather-icon" id="weatherIcon"></div>
+      <p class="temp" id="temperature"></p>
+      <p id="description"></p>
+      <div class="details">
+        <span>💧 Qoyaanka: <b id="humidity"></b></span>
+        <span>💨 Dabaysha: <b id="wind"></b></span>
+      </div>
+    </div>
+    <div id="loading" class="hidden">Waa la raadinayaa...</div>
+    <div id="error" class="hidden"></div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
